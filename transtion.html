@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    *{
+        margin: 0;padding: 0;
+    }
+    .con{
+        background-color: aqua;
+        height: 400px;
+        position: relative;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        border: solid black;
+        border-radius: 70px;
+        position: relative;
+        top: 295px;
+        left: 0px;
+         animation: x 3s linear 1s infinite , y 1s ease-out infinite alternate;
+         background-color: black;
+         
+
+    }
+    .text1{
+        position: relative;
+        justify-content: left;
+        
+    }
+    @keyframes x{
+        from{
+            left: 0%;
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+            left: 100%;
+        }
+    }
+    @keyframes y{
+        from{
+            top: 0%;
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+            top: 74%;
+        }
+    }
+    .loader{
+        background-color: rgb(69, 26, 119);
+        height: 400px;
+    
+    }
+    .load{
+        width: 150px;
+        height: 150px;
+        border:  10px solid whitesmoke;
+        border-radius: 50%;
+        border-top-color: rgb(5, 15, 5);
+        right: 323px;
+        animation: round 3s ease-out infinite;
+        position: absolute;
+        bottom: 34px;
+        left: 480px;
+    
+        
+    }
+    @keyframes round{
+        from{
+        
+            transform: rotate(0deg);
+            border-top-color: rgb(18, 231, 149);
+            
+        }
+        to{
+            transform: rotate(360deg);
+            border-top-color: brown;
+        }
+    }
+
+    </style>
+    
+<div class="con">
+    <div class="text1"> </div>
+    <div class="box"></div>
+    </div>
+    <div class="loader">
+    <div class="load"></div></div>
+
+</body>
+</html>
